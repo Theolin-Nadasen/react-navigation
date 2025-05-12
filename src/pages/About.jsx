@@ -18,8 +18,17 @@ function About() {
                 display={'flex'}
                 alignItems={'center'}
                 justifyContent={'center'}
-                height={'40%'}
-                width={'20%'}
+
+                sx={{
+                    width: {
+                        xs: '80%',
+                        md: '20%'
+                    },
+                    height: {
+                        xs: '80%',
+                        md: '40%'
+                    }
+                }}
 
                 className={'container'}>
 
