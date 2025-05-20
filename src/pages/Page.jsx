@@ -2,7 +2,7 @@ import React from 'react'
 import '../App.css'
 import { Box, Button, InputAdornment, Stack, TextField } from '@mui/material'
 import AccountIcon from '@mui/icons-material/AccountCircle'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 function Home() {
 
