@@ -11,16 +11,16 @@ function Home() {
 
       <div className='flex flex-col justify-between w-full h-full'>
 
-        <div>
-          <div className='card text-xs md:text-2xl'>
+        <div className='h-full'>
+          <div className='card text-xs lg:text-2xl'>
             <h2>LANDING PAGES</h2>
           </div>
 
-          <div className='card text-xs md:text-2xl'>
+          <div className='card text-xs lg:text-2xl'>
             <h2>WEB DESIGN</h2>
           </div>
 
-          <div className='card text-xs md:text-2xl'>
+          <div className='card text-xs lg:text-2xl'>
             <h2>DOMAIN AND HOSTING</h2>
           </div>
         </div>
