@@ -1,24 +1,28 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Button } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
+import logo from '../assets/logo512.png'
 
 
-const Layout = ({ page, pageName, title='page', children }) => {
-    const navigate = useNavigate();
+const Layout = ({ children }) => {
 
     return (
-        <div className='h-screen bg-amber-50 flex justify-center items-center flex-col'>
-            <div className='w-3/4 h-1/2 md:w-1/4 md:h-2/3 bg-[#F1F0F0] mb-5 container flex items-center flex-col'>
-                <h1 className='bg-red-500 w-full h-10 text-center pt-1 font-[exile] text-2xl rounded-t-lg'>{title}</h1>
+        <div className="min-h-screen flex flex-col bg-gray-200 text-gray-900 layout">
+            <AppBar position="static" color="default" elevation={1} >
+                <Toolbar className="max-w-6xl mx-auto w-full">
+                    <Typography variant="h6" className="flex-grow font-bold">
+                        Code With Me
+                    </Typography>
+                    <Button href="#services" color="inherit">Services</Button>
+                    <Button href="#about" color="inherit">About</Button>
+                    <Button href="#contact" color="inherit">Contact</Button>
+                </Toolbar>
+            </AppBar>
 
-                {children}
+            <Container className="flex-1 py-8">{children}</Container>
 
-            </div>
-
-            <div className='flex flex-row gap-5'>
-                <Button variant="contained" onClick={() => navigate(page)}>{pageName}</Button>
-                <Button onClick={() => navigate(-1)}>Back</Button>
-            </div>
+            <footer className="py-4 bg-gray-100 text-center text-sm">
+                &copy; {new Date().getFullYear()} Code With Me. All rights reserved.
+            </footer>
         </div>
     )
 }

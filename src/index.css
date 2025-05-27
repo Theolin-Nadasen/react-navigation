@@ -1,1 +1,8 @@
 @import 'tailwindcss';
+
+
+.layout{
+    background: url('./assets/background.jpg');
+    background-size: cover;
+}
+
