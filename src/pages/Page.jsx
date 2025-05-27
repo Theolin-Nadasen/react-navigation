@@ -42,7 +42,7 @@ function Home() {
               I'll handle the hosting setup, domain configuration, and deployment — zero stress.
             </p>
           </div>
-          <div className="p-6 rounded-xl shadow-md bg-white dark:bg-gray-800">
+          <div className="p-6 rounded-xl shadow-md bg-gray-800">
             <h3 className="font-bold text-lg mb-2 text-amber-200">Ongoing Support</h3>
             <p className="text-gray-300">
               Need changes or updates later? I offer affordable, flexible support options.

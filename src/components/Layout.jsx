@@ -8,13 +8,15 @@ const Layout = ({ children }) => {
     return (
         <div className="min-h-screen flex flex-col bg-gray-200 text-gray-900 layout">
             <AppBar position="static" color="default" elevation={1} >
-                <Toolbar className="max-w-6xl mx-auto w-full">
+                <Toolbar className="max-w-6xl mx-auto w-full flex-nowrap">
                     <Typography variant="h6" className="flex-grow font-bold">
                         Code With Me
                     </Typography>
-                    <Button href="#services" color="inherit">Services</Button>
-                    <Button href="#about" color="inherit">About</Button>
-                    <Button href="#contact" color="inherit">Contact</Button>
+                    <div className="hidden sm:flex">
+                        <Button href="#services" color="inherit">Services</Button>
+                        <Button href="#about" color="inherit">About</Button>
+                        <Button href="#contact" color="inherit">Contact</Button>
+                    </div>
                 </Toolbar>
             </AppBar>
 
